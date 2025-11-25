@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Manage Staff</title>
+  <link rel="stylesheet" href="GlobalCSS.css">
+  <script src="GlobalJs.js"></script>
+</head>
+
+<body>
+  <header>
+   <nav class="top-nav">
+    <div>
+      <a href="index.html">
+        <img src="images/LogoB.png" alt="Hayyhum Logo" class="logo-image header-logo">
+      </a>
+    </div>
+
+    <button class="nav-toggle" aria-label="Toggle navigation">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <ul class="nav-links">
+      <li><a href="index.html">Home Page</a></li>
+      <li><a href="AboutUs.html">About Us</a></li>
+      <li><a href="Services.html">Services</a></li>
+      <li><a href="CustomerDashboard.html">Customer Dashboard</a></li>
+      <li><a href="ServiceProviderDashboard.html" class="active" >Service Provider Dashboard</a></li>
+    </ul>
+  </nav>
+
+    <div class="breadcrumb">
+      <a href="index.html">Home Page</a>
+      <a href="ServiceProviderDashboard.html">Service Provider Dashboard</a>
+      <strong>Manage Staff Members</strong>
+    </div>
+  </header>
+  
+<button class="theme-toggle-btn" onclick="toggleTheme()">🌙 Dark Mode</button>
+
+
+
+  <main>
+
+    <section class="dashboard-intro">
+      <h1>Deactivate Staff Members</h1>
+      <p>
+        This page allows service providers to manage their team members efficiently. You can review staff profiles, deactivate inactive members, and add new team members to keep your operations running smoothly!
+      </p>
+    </section>
+
+    <form id="staff-list-form" class="staff-form">
+
+      <div class="staff-member">
+        <input type="checkbox" name="staff1">
+        <img src="images/beige_pfp.jpg" alt="Aisha Al-Faisal" class="avatar">
+        <div class="info">
+          <span class="name">Aisha Al-Faisal</span>
+          <span class="position">Managing Director</span>
+        </div>
+      </div>
+
+      <div class="staff-member">
+        <input type="checkbox" name="staff2">
+        <img src="images/beige_pfp.jpg" alt="Sara Al-Harthy" class="avatar">
+        <div class="info">
+          <span class="name">Sara Al-Harthy</span>
+          <span class="position">Operations Manager</span>
+        </div>
+      </div>
+
+      <div class="staff-member">
+        <input type="checkbox" name="staff3">
+        <img src="images/beige_pfp.jpg" alt="Mona Al-Mutairi" class="avatar">
+        <div class="info">
+          <span class="name">Mona Al-Mutairi</span>
+          <span class="position">Customer Service Coordinator</span>
+        </div>
+      </div>
+
+      <div class="staff-member">
+        <input type="checkbox" name="staff3">
+        <img src="images/beige_pfp.jpg" alt="Rana Al-Otaibi" class="avatar">
+        <div class="info">
+          <span class="name">Rana Al-Otaibi</span>
+          <span class="position">Scheduling Officer</span>
+        </div>
+      </div>
+
+      <div class="staff-member">
+        <input type="checkbox" name="staff3">
+        <img src="images/beige_pfp.jpg" alt="Dalal Al-Shammari" class="avatar">
+        <div class="info">
+          <span class="name">Dalal Al-Shammari</span>
+          <span class="position">Social Media Manager</span>
+        </div>
+      </div>
+
+      <div class="staff-member">
+        <input type="checkbox" name="staff3">
+        <img src="images/beige_pfp.jpg" alt="Lamya Al-Qahtani" class="avatar">
+        <div class="info">
+          <span class="name">Lamya Al-Qahtani</span>
+          <span class="position">Photographer</span>
+        </div>
+      </div>
+
+      <div class="staff-member">
+        <input type="checkbox" name="staff3">
+        <img src="images/beige_pfp.jpg" alt="Huda Al-Jaber" class="avatar">
+        <div class="info">
+          <span class="name">Huda Al-Jaber</span>
+          <span class="position">Cultural Research Writer</span>
+        </div>
+      </div>
+
+      <div class="staff-member">
+        <input type="checkbox" name="staff3">
+        <img src="images/beige_pfp.jpg" alt="Layla Al-Subaie" class="avatar">
+        <div class="info">
+          <span class="name">Layla Al-Subaie</span>
+          <span class="position">Designer</span>
+        </div>
+      </div>
+
+      <div class="staff-member">
+        <input type="checkbox" name="staff3">
+        <img src="images/beige_pfp.jpg" alt="Reem Al-Dossary" class="avatar">
+        <div class="info">
+          <span class="name">Reem Al-Dossary</span>
+          <span class="position">Tour Guide</span>
+        </div>
+      </div>
+
+      <div class="staff-member">
+        <input type="checkbox" name="staff3">
+        <img src="images/beige_pfp.jpg" alt="Yasmin Al-Malki" class="avatar">
+        <div class="info">
+          <span class="name">Yasmin Al-Malki</span>
+          <span class="position">Logistics Coordinator</span>
+        </div>
+      </div>
+    </form>
+
+    <div class="form-actions">
+      <button type="button" id="delete-staff-btn" class="btn submit-btn">Delete Selected</button>
+    </div>
+
+    <hr class="section-sep">
+
+    <section class="form-page-main">
+      <div class="form-container">
+        <h2>Add New Staff Member Form</h2>
+
+        <form action="#" method="post" enctype="multipart/form-data" class="form-body">
+
+          <div class="form-row">
+            <div class="form-group half-width">
+              <label for="firstName">First Name*</label>
+              <input id="firstName" name="first-name" type="text" placeholder="Your first name" >
+            </div>
+
+            <div class="form-group half-width">
+              <label for="lastName">Last Name*</label>
+              <input id="lastName" name="last-name" type="text" placeholder="Your last name" >
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="dob">DOB*</label>
+            <input id="dob" name="dob" type="date" >
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email*</label>
+            <input id="email" name="email" type="email" placeholder="Myemail@example.com" >
+          </div>
+
+          <div class="form-group">
+            <label for="expertise">Area Of Expertise*</label>
+            <select id="expertise" name="expertise">
+              <option value="" selected disabled>Choose an expertise</option>
+              <option value="tours">Design</option>
+              <option value="hotels">Hospitality</option>
+              <option value="restaurants">Marketing</option>
+              <option value="support">Administrative</option>
+              <option value="support">Destination Management</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="skills">Skills*</label>
+            <input id="skills" name="skills" type="text" placeholder="e.g. Leadership, Collaboration, etc...">
+          </div>
+
+          <div class="form-group">
+            <label for="education">Education*</label>
+            <select id="education" name="education">
+              <option value="" selected disabled>Choose an education level</option>
+              <option value="hs">High School</option>
+              <option value="ba">Bachelor's</option>
+              <option value="ma">Master's</option>
+              <option value="phd">PhD</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="photoUpload">Upload photo*</label>
+            <label class="uploadbox" for="photoUpload">
+              <img src="images/upload_icon.png" alt="Upload Photo" class="upload-icon">
+            </label>
+            <input type="file" id="photoUpload" name="photoUpload" accept="image/*" style="display:none;">
+            <div class="form-actions center">
+              <button type="submit" class="btn submit-btn">Submit</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="footer-container">
+      <div class="footer-logo">
+        <a href="index.html"><img src="images/LogoB.png" alt="Hayyhum Logo" class="logo-image"></a>
+      </div>
+
+      <div class="footer-links">
+        <h3 class="contact-title">Contact Us</h3>
+        <ul class="contact-list">
+          <li id="contact-email">Hayyhum@gmail.com</li>
+          <li id="contact-phone">+966 55 921 2025</li>
+        </ul>
+      </div>
+
+      <div class="social-media">
+        <p class="social-media-p">Social Media</p>
+        <img src="images/SocialIcons1.png" alt="Social Media Icons" class="social-icons-img">
+      </div>
+
+      <div class="sitemap-link">
+        <p><a href="images/sitemap.html">Site Map</a></p>
+      </div>
+    </div>
+
+    <p class="copyright">Copyrights ©2025 All rights reserved. Hayyhum</p>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hayyhum - Service Evaluation Form</title>
+    <link rel="stylesheet" href="GlobalCSS.css">
+	<script src="GlobalJs.js"></script>
+</head>
+
+<body>
+	<header>
+      <nav class="top-nav">
+    <div>
+      <a href="index.html">
+        <img src="images/LogoB.png" alt="Hayyhum Logo" class="logo-image header-logo">
+      </a>
+    </div>
+
+    <button class="nav-toggle" aria-label="Toggle navigation">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <ul class="nav-links">
+      <li><a href="index.html">Home Page</a></li>
+      <li><a href="AboutUs.html">About Us</a></li>
+      <li><a href="Services.html">Services</a></li>
+      <li><a href="CustomerDashboard.html" class="active">Customer Dashboard</a></li>
+      <li><a href="ServiceProviderDashboard.html" >Service Provider Dashboard</a></li>
+    </ul>
+  </nav>
+        
+        <div class="breadcrumb">
+            <a href="index.html">Home Page</a>
+			<a href="CustomerDashboard.html">Customer Dashboard</a>
+			<strong> Service Evaluation Form</strong>
+        </div>
+    </header>
+	
+<button class="theme-toggle-btn" onclick="toggleTheme()">🌙 Dark Mode</button>
+
+
+	
+    <main class="form-page-main">
+        <div class="form-container"> 
+            <h2>Service Evaluation Page</h2>
+            <form action="CustomerDashboard.html" method="GET" class="evaluation-form" novalidate>
+                <div class="form-group">
+                    <label for="service-select">Select Service to Evaluate *</label>
+                    <select id="service-select" name="service" required>
+                        <option value="" selected disabled>Choose Completed Service</option>
+                        <option value="alula">AlUla Hot Air Balloon Ride</option>
+                        <option value="redsea">Red sea snorkling</option>
+                        <option value="edge">Edge of the World Trip</option>
+                        <option value="mamlaka">Al Mamlaka Social Dining</option>
+                        <option value="banyan">Banyan Tree Al-Ula</option>
+						<option value="shebara">Shebara Resort</option>
+                    </select>
+                </div>
+				
+				<div class="form-group rating-group">
+				<label>Rate Your Experience *</label>
+				<div class="star-rating">
+				<input type="radio" id="rating-5" name="rating" value="5" >
+				<label for="rating-5" title="Great"></label>
+				
+				<input type="radio" id="rating-4" name="rating" value="4">
+				<label for="rating-4" title="Good"></label>
+				
+				<input type="radio" id="rating-3" name="rating" value="3">
+				<label for="rating-3" title="Okay"></label>
+				
+				<input type="radio" id="rating-2" name="rating" value="2">
+				<label for="rating-2" title="Bad"></label>
+				
+				<input type="radio" id="rating-1" name="rating" value="1">
+				<label for="rating-1" title="Terrible"></label>
+				</div>
+				</div>
+
+				<div class="form-group">
+					<label for="feedback">Feedback *</label>
+					 <textarea id="feedback" name="feedback" rows="8"  placeholder="Share your experience and provide constructive feedback."></textarea>
+				</div>
+
+				<div class="form-actions">
+					<button type="submit" class="btn submit-btn">Submit</button>
+				</div>
+			</form>
+        </div> 
+    </main>
+	
+	<footer>
+	<div class="footer-container">
+			<div class="footer-logo"><a href="index.html"><img src="images/LogoB.png" alt="Hayyhum Logo" class="logo-image"></a></div>
+			
+			<div class="footer-links">
+				<h3 class="contact-title">Contact Us</h3>
+				<ul class="contact-list">
+					<li id="contact-email">Hayyhum@gmail.com</li>
+					<li id="contact-phone">+966 55 821 2025</li>
+				</ul>
+			</div>
+
+			<div class="social-media">
+				<p>Social Media</p>
+				<img src="images/SocialIcons1.png" alt="Social Media Icons" class="social-icons-img">
+			</div>
+			
+			<div class="sitemap-link">
+				<p><a href="images/sitemap.jpg">Site Map</a></p>
+			</div>
+			
+		</div>
+		<div class="copyright">
+			<p>Copyrights ©2025 All rights reserved. Hayyhum</p>
+	</div>
+	</footer>
+	
+</body>
+</html>

@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hayyhum - Homepage</title>
+    <link rel="stylesheet" href="GlobalCSS.css">
+	<script src="GlobalJs.js"></script>
+</head>
+
+<body class="home-page">
+
+<header>
+     <nav class="top-nav">
+        <div>
+            <a href="index.html">
+                <img src="images/LogoB.png" alt="Hayyhum Logo" class="logo-image header-logo">
+
+            </a>
+        </div>
+
+        <button class="nav-toggle" aria-label="Toggle navigation">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <ul class="nav-links">
+            <li><a href="index.html" class="active">Home Page</a></li>
+            <li><a href="AboutUs.html">About Us</a></li>
+            <li><a href="Services.html">Services</a></li>
+            <li><a href="CustomerDashboard.html">Customer Dashboard</a></li>
+            <li><a href="ServiceProviderDashboard.html">Service Provider Dashboard</a></li>
+        </ul>
+    </nav>
+
+
+</header>
+
+<button id="backToTop">↑</button>
+
+<button class="theme-toggle-btn" onclick="toggleTheme()">🌙 Dark Mode</button>
+
+
+<main>
+    <div class="hero-section">
+        <h1>Hayyhum</h1>
+        <p>Explore Saudi, One Experience at a Time</p>
+    </div>
+
+    
+    <section class="vision-mission-scroll">
+        <div class="scroll-wrapper">
+            <div class="content-block">
+                <h2>Vision</h2>
+                <p>To become the leading digital gateway for exploring Saudi Arabia’s diverse cities, heritage, and experiences. Empowering
+                    travelers to discover authentic journeys while supporting local tourism and hospitality.</p>
+            </div>
+
+            <div class="content-block image-container">
+                <img src="images/img4.jpg" alt="Vision Image" class="contained-img">
+            </div>
+
+            <div class="content-block">
+                <h2>Mission</h2>
+                <p>Hayyhum connects visitors with local service providers across Saudi Arabia, offering a simple front-end interface to explore, 
+                    request, and review tourism services. The platform promotes cultural heritage and encourages sustainable local tourism.</p>
+            </div>
+
+            <div class="content-block image-container">
+                <img src="images/img6.avif" alt="Mission Image" class="contained-img">
+            </div>
+
+            <div class="content-block">
+                <h2>Goals</h2>
+                <p>Hayyhum mainly aim to promote the tourism in Saudi by giving an opportunity to explore its different regions to reflect the cultural diversity encouraging tourism.</p>
+            </div>
+        </div>
+    </section>
+
+    
+    <section class="services-section">
+        <h2>Services</h2>
+        <p class="header-description">
+            Discover a wide range of curated tourism services tailored to your city adventures.<br>
+            From guided tours to local experiences, we connect you with trusted providers who bring Saudi culture to life!
+        </p>
+
+        <div class="service-category">
+            <a id="ex" href="Services.html#experiences">
+                <div class="service-item hover-effect">
+                    <div class="service-image">
+                        <img src="images/experience.jpg" alt="Experience Image" class="contained-img">
+                    </div>
+                    <div class="service-details">
+                        <h3 class="service-title">Experiences The Saudi Way</h3>
+                        <div class="service-description">
+                            <p>From desert adventures to cultural tours, discover tailored experiences that let you explore Saudi Arabia at your own pace.</p>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+
+        <div class="service-category">
+            <a id="ho" href="Services.html#hotels">
+                <div class="service-item hover-effect">
+                    <div class="service-image">
+                        <img src="images/hotel.jpg" alt="Hotel Image" class="contained-img">
+                    </div>
+                    <div class="service-details">
+                        <h3 class="service-title">Find The Hotel You Need</h3>
+                        <div class="service-description">
+                            <p>Choose from a variety of hotels across the kingdom, with comfort, convenience, and budget-friendly options for every traveler.</p>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+
+        <div class="service-category">
+            <a id="re" href="Services.html#restaurants">
+                <div class="service-item hover-effect">
+                    <div class="service-image">
+                        <img src="images/restaurant.jpg" alt="Restaurant Image" class="contained-img">
+                    </div>
+                    <div class="service-details">
+                        <h3 class="service-title">Dine with Handpicked Flavors</h3>
+                        <div class="service-description">
+                            <p>Explore top restaurants and hidden gems, offering authentic Saudi flavors and international cuisines for every taste.</p>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <hr>
+
+    
+    <section class="reviews-section">
+        <h2>Reviews</h2>
+        <p class="header-description">
+            Hear directly from travelers and locals who’ve explored with us.<br>
+            Honest feedback, shared stories, and real ratings help you choose the best experiences with confidence!
+        </p>
+
+        <div class="reviews-scroll-container">
+            <div class="reviews-scroll-wrapper">
+
+                <div class="review-card">
+                    <p class="review-heading"><strong>Find The Hotel You Need</strong></p>
+                    <p class="review-text">Super easy to use and beautifully designed. I found everything I needed for my trip to Riyadh stay!</p>
+                    <div class="review-footer">
+                        <div class="user-info">
+                            <div class="user-avatar"></div>
+                            <p class="user-name">Noura Almuayli</p>
+                        </div>
+                        <div class="stars">★★★★☆</div>
+                    </div>
+                </div>
+
+                <div class="review-card">
+                    <p class="review-heading"><strong>Experiences The Saudi Way</strong></p>
+                    <p class="review-text">Loved how the site highlights local experiences. It made my visit to AlUla unforgettable!</p>
+                    <div class="review-footer">
+                        <div class="user-info">
+                            <div class="user-avatar"></div>
+                            <p class="user-name">Waad Alghamdi</p>
+                        </div>
+                        <div class="stars">★★★★★</div>
+                    </div>
+                </div>
+
+                <div class="review-card">
+                    <p class="review-heading"><strong>Dine with Handpicked Flavors</strong></p>
+                    <p class="review-text">Great restaurants and smooth booking process. Highly recommend for Saudi locals and visitors!</p>
+                    <div class="review-footer">
+                        <div class="user-info">
+                            <div class="user-avatar"></div>
+                            <p class="user-name">Amal Albogami</p>
+                        </div>
+                        <div class="stars">★★★★★</div>
+                    </div>
+                </div>
+
+                <div class="review-card">
+                    <p class="review-heading"><strong>Dine with Handpicked Flavors</strong></p>
+                    <p class="review-text">The cultural touch throughout the site made me feel truly welcomed. Hayyhum lives up to its name!</p>
+                    <div class="review-footer">
+                        <div class="user-info">
+                            <div class="user-avatar"></div>
+                            <p class="user-name">Alanoud Alsanad</p>
+                        </div>
+                        <div class="stars">★★★★☆</div>
+                    </div>
+                </div>
+
+                <div class="review-card">
+                    <p class="review-heading"><strong>Experiences The Saudi Way</strong></p>
+                    <p class="review-text">I discovered places I’d never heard of before. This platform is a gem for local tourism!</p>
+                    <div class="review-footer">
+                        <div class="user-info">
+                            <div class="user-avatar"></div>
+                            <p class="user-name">Hessa Alarifi</p>
+                        </div>
+                        <div class="stars">★★★★★</div>
+                    </div>
+                </div>
+
+                <div class="review-card">
+                    <p class="review-heading"><strong>Find The Hotel You Need</strong></p>
+                    <p class="review-text">Fast, simple, and full of authentic recommendations. Perfect for planning weekend getaways!</p>
+                    <div class="review-footer">
+                        <div class="user-info">
+                            <div class="user-avatar"></div>
+                            <p class="user-name">Sara Albaz</p>
+                        </div>
+                        <div class="stars">★★★★☆</div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    
+    <section class="destinations-section">
+        <h2>Top Local Destinations</h2>
+        <p class="header-description">
+            Explore the most loved spots across Saudi cities from hidden gems to iconic landmarks.<br>
+            Our top picks highlight the beauty, heritage, and spirit of each destination!
+        </p>
+
+        <div class="destinations-scroll-container">
+            <div class="destinations-scroll-wrapper">
+
+                <div class="destination-item">
+                    <div class="destination-image">
+                        <img src="images/local1.jpeg" alt="AlUla" class="contained-img">
+                    </div>
+                    <h3 class="destination-name">AlUla</h3>
+                </div>
+
+                <div class="destination-item">
+                    <div class="destination-image">
+                        <img src="images/local2.jpg" alt="Umluj" class="contained-img">
+                    </div>
+                    <h3 class="destination-name">Umluj Islands</h3>
+                </div>
+
+                <div class="destination-item">
+                    <div class="destination-image">
+                        <img src="images/local3.jpg" alt="Bujairi Terrace" class="contained-img">
+                    </div>
+                    <h3 class="destination-name">Bujairi Terrace</h3>
+                </div>
+
+                <div class="destination-item">
+                    <div class="destination-image">
+                        <img src="images/local4.jpg" alt="Boulevard" class="contained-img">
+                    </div>
+                    <h3 class="destination-name">Boulevard Riyadh City</h3>
+                </div>
+
+                <div class="destination-item">
+                    <div class="destination-image">
+                        <img src="images/local5.jpg" alt="Historic Jeddah" class="contained-img">
+                    </div>
+                    <h3 class="destination-name">Historic Jeddah</h3>
+                </div>
+
+                <div class="destination-item">
+                    <div class="destination-image">
+                        <img src="images/local6.webp" alt="Al-Qarah Mountain" class="contained-img">
+                    </div>
+                    <h3 class="destination-name">Al-Qarah Mountain</h3>
+                </div>
+
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <div class="footer-container">
+        <div class="footer-logo"><a href="index.html"><img src="images/LogoB.png" alt="Hayyhum Logo" class="logo-image footer-logo-img">
+</a></div>
+
+        <div class="footer-links">
+            <p class="contact-title">Contact Us</p>
+            <ul class="contact-list">
+                <li id="contact-email">Hayyhum@gmail.com</li>
+                <li id="contact-phone">+966 55 821 2025</li>
+            </ul>
+        </div>
+
+        <div class="social-media">
+            <p>Social Media</p>
+            <img src="images/SocialIcons1.png" alt="Social Media Icons" class="social-icons-img">
+        </div>
+
+        <div class="sitemap-link">
+            <p><a href="images/sitemap.jpg">Site Map</a></p>
+        </div>
+    </div>
+
+    <div class="copyright">
+        <p>Copyrights ©2025 All rights reserved. Hayyhum</p>
+        <p id="liveClock" style="margin-top: 5px; font-size: 12px; color: rgba(255,255,255,0.7);"></p>
+    </div>
+</footer>
+
+<script>
+// الساعة الحية
+function updateClock() {
+  const now = new Date();
+  const options = { 
+    weekday: 'long', 
+    year: 'numeric', 
+    month: 'long', 
+    day: 'numeric',
+    hour: '2-digit',
+    minute: '2-digit',
+    second: '2-digit',
+    hour12: true 
+  };
+  
+  const dateTimeString = now.toLocaleDateString('en-SA', options);
+  document.getElementById('liveClock').textContent = dateTimeString;
+}
+
+// تحديث الساعة كل ثانية
+setInterval(updateClock, 1000);
+updateClock(); // تشغيل الساعة مباشرة
+</script>
+
+</body>
+</html>

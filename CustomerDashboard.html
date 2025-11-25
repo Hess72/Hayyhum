@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hayyhum - Customer Dashboard</title>
+    <link rel="stylesheet" href="GlobalCSS.css">
+	<script src="GlobalJs.js"></script>
+</head>
+
+<body>
+     <header>
+  <nav class="top-nav">
+    <div>
+      <a href="index.html">
+        <img src="images/LogoB.png" alt="Hayyhum Logo" class="logo-image header-logo">
+      </a>
+    </div>
+
+    <button class="nav-toggle" aria-label="Toggle navigation">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <ul class="nav-links">
+      <li><a href="index.html">Home Page</a></li>
+      <li><a href="AboutUs.html">About Us</a></li>
+      <li><a href="Services.html">Services</a></li>
+      <li><a href="CustomerDashboard.html" class="active">Customer Dashboard</a></li>
+      <li><a href="ServiceProviderDashboard.html">Service Provider Dashboard</a></li>
+    </ul>
+  </nav>
+
+  <div class="breadcrumb">
+    <a href="index.html">Home Page</a>
+    <strong>Customer Dashboard</strong>
+  </div>
+</header>
+	
+<button class="theme-toggle-btn" onclick="toggleTheme()">🌙 Dark Mode</button>
+
+
+
+    <main>
+        <section class="dashboard-intro">
+            <h1>Where every booking becomes an unforgettable experience</h1>
+			<p>Welcome to Hayyhum! Your journey begins now. We bring the magic of Saudi Arabia directly to you,<br> making every booking from luxury hotels to hidden gem trips effortless. Dive into your past adventures and easily <br>plan your next unforgettable experience right here, with just one click!</p>
+            <div class="dashboard-actions">
+                <a href="RequestForm.html" class="btn request-service-btn">Request Service</a>
+                <a href="EvaluationForm.html" class="btn evaluate-service-btn">Service Evaluation</a>
+            </div>
+        </section>
+
+		<hr>
+
+        <section class="previous-requests">
+            <h2>Previous Service Requests</h2>
+            <p>Review the history of your bookings and past travel arrangements with Hayyhum below.<br> You can quickly check the status of pending requests, review details of completed trips,<br> and manage any cancelled services, keeping all your Saudi adventures organized in one convenient spot.</p>
+			<div class="requests-flex">
+				<div class="request-item completed">
+					<div class="placeholder-box">
+						<img src="images/alula_balloon.jpg" alt="AlUla Hot Air Balloon Ride" class="service-image">
+					</div> 
+					<div class="item-details">
+						<h3>AlUla Hot Air Balloon Ride</h3>
+						<p class="request-date">September 23, 2025</p>
+						<div class="item-actions">
+							<span class="status pending">Pending</span>
+							 <span class="price">$1500</span>
+
+						</div>
+					</div>
+				</div>
+
+
+				<div class="request-item cancelled">
+					<div class="placeholder-box">
+						<img src="images/red_sea_snorkeling.jpg" alt="Red Sea Snorkeling" class="service-image">
+					</div>
+					<div class="item-details">
+						<h3>Red Sea Snorkeling</h3>
+						<p class="request-date">September 20, 2025</p>
+						<div class="item-actions">
+							<span class="status cancelled">Declined</span>
+							<span class="price">$800</span>
+						</div>
+					</div>
+				</div>
+
+
+				<div class="request-item provided">
+					<div class="placeholder-box">
+						<img src="images/edge_of_world.jpg" alt="Edge of the World Trip" class="service-image">
+					</div>
+					<div class="item-details">
+						<h3>Edge of the World Trip</h3>
+						<p class="request-date">September 12, 2025</p>
+						<div class="item-actions">
+							<span class="status provided">Completed</span>
+							<span class="price">$350</span>
+						</div>
+					</div>
+				</div>
+
+
+				<div class="request-item pending">
+					<div class="placeholder-box">
+						<img src="images/al_mamlaka.jpg" alt="Al Mamlaka Social Dining" class="service-image">
+					</div>
+					<div class="item-details">
+						<h3>Al Mamlaka Social Dining</h3>
+						<p class="request-date">September 10, 2025</p>
+						<div class="item-actions">
+							<span class="status pending">Pending</span>
+							<span class="price">$950</span>
+
+						</div>
+					</div>
+				</div>
+
+
+				<div class="request-item canceled">
+					<div class="placeholder-box">
+						<img src="images/banyan_tree.jpg" alt="Banyan Tree Al-Ula" class="service-image">
+					</div>
+					<div class="item-details">
+						<h3>Banyan Tree Al-Ula</h3>
+						<p class="request-date">February 23, 2025</p>
+						<div class="item-actions">
+							<span class="status cancelled">Declined</span>
+							<span class="price">$4500</span>
+						</div>
+					</div>
+				</div>
+
+
+				<div class="request-item provided">
+					<div class="placeholder-box">
+						<img src="images/shebara_resort.jpg" alt="Shebara Resort" class="service-image">
+					</div>
+					<div class="item-details">
+						<h3>Shebara Resort</h3>
+						<p class="request-date">February 20, 2025</p>
+						<div class="item-actions">
+							<span class="status provided">Completed</span>
+							<span class="price">$6200</span>
+						</div>
+					</div>
+				</div>
+			</div>
+        </section>	
+    </main>
+
+	<footer>
+		<div class="footer-container">
+			<div class="footer-logo"><a href="index.html"><img src="images/LogoB.png" alt="Hayyhum Logo" class="logo-image footer-logo-img"></a></div>
+			
+			<div class="footer-links">
+				<h3 class="contact-title">Contact Us</h3>
+				<ul class="contact-list">
+					<li id="contact-email">Hayyhum@gmail.com</li>
+					<li id="contact-phone">+966 55 821 2025</li>
+				</ul>
+			</div>
+
+			<div class="social-media">
+				<p>Social Media</p>
+				<img src="images/SocialIcons1.png" alt="Social Media Icons" class="social-icons-img">
+			</div>
+			
+			<div class="sitemap-link">
+				<p><a href="images/sitemap.jpg">Site Map</a></p>
+			</div>
+			
+		</div>
+		<div class="copyright">
+			<p>Copyrights ©2025 All rights reserved. Hayyhum</p>
+		</div>
+	</footer>
+	
+</body>
+</html>

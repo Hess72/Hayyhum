@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hayyhum - Request A Service</title>
+    <link rel="stylesheet" href="GlobalCSS.css"> 
+	<script src="GlobalJs.js"></script>
+</head>
+
+<body>
+    <header>
+	<nav class="top-nav">
+    <div>
+      <a href="index.html">
+        <img src="images/LogoB.png" alt="Hayyhum Logo" class="logo-image header-logo">
+      </a>
+    </div>
+
+    <button class="nav-toggle" aria-label="Toggle navigation">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <ul class="nav-links">
+      <li><a href="index.html">Home Page</a></li>
+      <li><a href="AboutUs.html">About Us</a></li>
+      <li><a href="Services.html">Services</a></li>
+      <li><a href="CustomerDashboard.html" class="active">Customer Dashboard</a></li>
+      <li><a href="ServiceProviderDashboard.html">Service Provider Dashboard</a></li>
+    </ul>
+  </nav>
+    
+        <div class="breadcrumb">
+            <a href="index.html">Home Page</a>
+			<a href="CustomerDashboard.html">Customer Dashboard</a>
+			<strong> Service Request Form</strong>
+        </div>
+    </header>
+	
+<button class="theme-toggle-btn" onclick="toggleTheme()">🌙 Dark Mode</button>
+
+
+    <main class="form-page-main">
+        <div class="form-container">
+            <h2>Service Request Page</h2>
+            <form id="requestForm" action="CustomerDashboard.html" method="GET" class="request-form">
+                
+                <div class="form-group">
+                    <label for="service-select">Select a Service *</label>
+                    <select id="service-select" name="service" required>
+                        <option value="" selected disabled>Choose a Service</option>
+                        <option value="hotel">Hotel Reservation</option>
+                        <option value="trip">Leisure Trip Package</option>
+                        <option value="restaurant">Restaurant Booking</option>
+                        <option value="custom">Custom Package Request</option>
+                    </select>
+                </div>
+                
+                <div class="form-row">
+                    <div class="form-group half-width">
+                        <label for="first-name">First Name *</label>
+                        <input type="text" id="first-name" name="firstName" required placeholder="Enter your first name">
+                    </div>
+					
+					
+                    <div class="form-group half-width">
+                        <label for="last-name">Last Name *</label>
+                        <input type="text" id="last-name" name="lastName" required placeholder="Enter your last name">
+                    </div>
+                </div>
+				
+				
+                <div class="form-group">
+                    <label for="due-date">Due Date *</label>
+                    <input type="date" id="due-date" name="dueDate" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="request-description">Request Description *</label>
+                    <textarea id="request-description" name="requestDescription" rows="8" required placeholder="Detail your request (location, number of people, specific needs, etc.)"></textarea>
+                </div>
+
+                <div class="form-actions">
+                    <button type="submit" class="btn submit-btn">Submit</button>
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+		<div class="footer-container">
+        <div class="footer-logo"><a href="index.html"><img src="images/LogoB.png" alt="Hayyhum Logo" class="logo-image"></a></div>
+        
+        <div class="footer-links">
+            <h3 class="contact-title">Contact Us</h3>
+			<ul class="contact-list">
+				<li id="contact-email">Hayyhum@gmail.com</li>
+				<li id="contact-phone">+966 55 821 2025</li>
+			</ul>
+        </div>
+
+        <div class="social-media">
+            <p>Social Media</p>
+			<img src="images/SocialIcons1.png" alt="Social Media Icons" class="social-icons-img">
+        </div>
+		
+		<div class="sitemap-link">
+            <p><a href="images/sitemap.jpg">Site Map</a></p>
+        </div>
+		</div>
+		
+		<div class="copyright">
+			<p>Copyrights ©2025 All rights reserved. Hayyhum</p>
+		</div>
+    </footer>
+	
+</body>
+</html>

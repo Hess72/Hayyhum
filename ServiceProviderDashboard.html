@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" >
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Service Provider Dashboard</title>
+	<link rel="stylesheet" href="GlobalCSS.css" >
+	<script src="GlobalJs.js"></script>
+</head>
+
+<body>
+	<header> 
+		<nav class="top-nav">
+    <div>
+      <a href="index.html">
+        <img src="images/LogoB.png" alt="Hayyhum Logo" class="logo-image header-logo">
+      </a>
+    </div>
+
+    <button class="nav-toggle" aria-label="Toggle navigation">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <ul class="nav-links">
+      <li><a href="index.html">Home Page</a></li>
+      <li><a href="AboutUs.html">About Us</a></li>
+      <li><a href="Services.html">Services</a></li>
+      <li><a href="CustomerDashboard.html">Customer Dashboard</a></li>
+      <li><a href="ServiceProviderDashboard.html" class="active">Service Provider Dashboard</a></li>
+    </ul>
+  </nav>
+
+		<div class="breadcrumb">
+		<a href="index.html">Home Page</a>
+		<strong>Service Provider Dashboard</strong>
+		</div>
+	</header>
+	
+<button class="theme-toggle-btn" onclick="toggleTheme()">🌙 Dark Mode</button>
+
+
+	
+	<main class="provider-dashboard-main">
+		<section class="dashboard-intro">
+		<h1>Where providers control every operation with ease</h1>
+		<p>Welcome to Hayyhum! This is your control center to manage and grow your services with confidence. 
+		Here, you can add new experiences, update pricing and details, and oversee your entire catalog effortlessly.
+		</p>
+		<div class="provider-actions">
+		<a href="AddServices.html" class="btn add-service-btn">Add New Service</a>
+		<a href="manageStaff.html" class="btn manage-staff-btn">Manage Staff Members</a>
+		<a href="Offers.html" class="btn manage-staff-btn">Manage Offers</a>
+		</div>
+		</section>
+		
+		<hr>
+		
+		<h2 class="services-title">List of your services</h2>
+		
+		<section class="category">
+		<h3 class="provide-title">Experiences you provide</h3>
+		<div class="scroll-row" id="expContainer">
+
+
+
+		
+
+
+		</div>
+		</section>
+
+		<section class="category">
+		<h3 class="provide-title">Hotels you provide</h3>
+		<div class="scroll-row" id="hotelContainer">
+			
+			
+
+
+		</div>
+		</section>
+		
+		<section class="category">
+		<h3 class="provide-title">Restaurants you provide</h3>
+		<div class="scroll-row" id="restContainer">
+		
+
+
+		
+
+		</div>
+		</section>
+	</main>
+
+	<footer>
+	<div class="footer-container">
+			<div class="footer-logo"><a href="index.html"><img src="images/LogoB.png" alt="Hayyhum Logo" class="logo-image footer-logo-img"></a></div>
+			
+			<div class="footer-links">
+				<h3 class="contact-title">Contact Us</h3>
+				<ul class="contact-list">
+					<li id="contact-email">Hayyhum@gmail.com</li>
+					<li id="contact-phone">+966 55 821 2025</li>
+				</ul>
+			</div>
+
+			<div class="social-media">
+				<p>Social Media</p>
+				<img src="images/SocialIcons1.png" alt="Social Media Icons" class="social-icons-img">
+			</div>
+			
+			<div class="sitemap-link">
+				<p><a href="images/sitemap.jpg">Site Map</a></p>
+			</div>
+			
+		</div>
+		<div class="copyright">
+			<p>Copyrights ©2025 All rights reserved. Hayyhum</p>
+	</div>
+	</footer>
+	
+</body>
+</html>

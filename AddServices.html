@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Add New Service</title>
+	<link rel="stylesheet" href="GlobalCSS.css">
+	<script src="GlobalJs.js"></script>
+</head>
+
+<body>
+	<header>
+	<nav class="top-nav">
+    <div>
+      <a href="index.html">
+        <img src="images/LogoB.png" alt="Hayyhum Logo" class="logo-image header-logo">
+      </a>
+    </div>
+
+    <button class="nav-toggle" aria-label="Toggle navigation">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <ul class="nav-links">
+      <li><a href="index.html">Home Page</a></li>
+      <li><a href="AboutUs.html">About Us</a></li>
+      <li><a href="Services.html">Services</a></li>
+      <li><a href="CustomerDashboard.html">Customer Dashboard</a></li>
+      <li><a href="ServiceProviderDashboard.html" class="active" >Service Provider Dashboard</a></li>
+    </ul>
+  </nav>
+
+		<div class="breadcrumb">
+            <a href="index.html">Home Page</a>
+			<a href="ServiceProviderDashboard.html">Service Provider Dashboard</a>
+			<strong>Add New Service</strong>
+        </div>
+	</header>
+	
+<button class="theme-toggle-btn" onclick="toggleTheme()">🌙 Dark Mode</button>
+
+
+
+
+	<main class="form-page-main">
+		<div class="form-container">
+		<h2>Add New Service Form</h2>
+		<form action="#" method="POST" enctype="multipart/form-data">
+
+			<div class="form-group">
+  <label for="service-category">Select a service*</label>
+  <select id="service-category" name="service-category">
+      <option value="" disabled selected>Choose a Service</option>
+      <option value="experience">Experiences</option>
+      <option value="hotel">Hotels</option>
+      <option value="restaurant">Restaurants</option>
+  </select>
+</div>
+
+			<div class="form-group">
+			  <label for="service-name">Service name*</label>
+			  <input type="text" id="service-name" name="service-name" placeholder="Enter service name">
+			</div>
+
+			<div class="form-group">
+			  <label for="service-price">Service price*</label>
+			  <input type="text" id="service-price" name="service-price" placeholder="Enter service price e.g. 2500" >
+			</div>
+			
+			<div class="form-group">
+    <label for="service-city">City*</label>
+    <input type="text" id="service-city" name="service-city" placeholder="Enter city name" >
+</div>
+
+			<div class="form-group">
+			  <label for="description">Service Description*</label>
+			  <textarea id="description" name="description" rows="5" placeholder="Please provide details about your request..." ></textarea>
+			</div>
+			
+			
+
+
+			<div class="form-group">
+    <label for="photoUpload">Upload photo*</label>
+    <label class="uploadbox" for="photoUpload">
+      <img src="images/upload_icon.png" alt="Upload Photo" class="upload-icon">
+    </label>
+    <input type="file" id="photoUpload" name="photoUpload" accept="image/*" style="display:none;">
+</div>
+
+<div class="form-actions center">
+    <button type="submit" class="btn submit-btn">Add New Service</button>
+</div>
+
+    </main>
+
+  
+	<footer>
+		<div class="footer-container">
+			<div class="footer-logo"><a href="index.html"><img src="images/LogoB.png" alt="Hayyhum Logo" class="logo-image"></a></div>
+			
+			<div class="footer-links">
+				<h3 class="contact-title">Contact Us</h3>
+				<ul class="contact-list">
+					<li id="contact-email">Hayyhum@gmail.com</li>
+					<li id="contact-phone">+966 55 821 2025</li>
+				</ul>
+			</div>
+
+			<div class="social-media">
+				<p>Social Media</p>
+				<img src="images/SocialIcons1.png" alt="Social Media Icons" class="social-icons-img">
+			</div>
+			
+			<div class="sitemap-link">
+				<p><a href="images/sitemap.jpg">Site Map</a></p>
+			</div>
+			
+		</div>
+		<div class="copyright">
+			<p>Copyrights ©2025 All rights reserved. Hayyhum</p>
+		</div>
+	</footer>
+	
+</body>
+</html>

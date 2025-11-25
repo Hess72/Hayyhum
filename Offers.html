@@ -1,0 +1,215 @@
+ <!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Manage Offers</title>
+	<link rel="stylesheet" href="GlobalCSS.css">
+	<script src="GlobalJs.js"></script>
+</head>
+
+<body>
+	<header>
+	<nav class="top-nav">
+    <div>
+      <a href="index.html">
+        <img src="images/LogoB.png" alt="Hayyhum Logo" class="logo-image header-logo">
+      </a>
+    </div>
+
+    <button class="nav-toggle" aria-label="Toggle navigation">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <ul class="nav-links">
+      <li><a href="index.html">Home Page</a></li>
+      <li><a href="AboutUs.html">About Us</a></li>
+      <li><a href="Services.html">Services</a></li>
+      <li><a href="CustomerDashboard.html">Customer Dashboard</a></li>
+      <li><a href="ServiceProviderDashboard.html" class="active" >Service Provider Dashboard</a></li>
+    </ul>
+  </nav>
+
+		<div class="breadcrumb">
+		<a href="index.html">Home Page</a>
+		<a href="ServiceProviderDashboard.html">Service Provider Dashboard</a>
+		<strong>Manage Offers</strong>
+		</div>
+	</header>
+	
+<button class="theme-toggle-btn" onclick="toggleTheme()">🌙 Dark Mode</button>
+
+
+	<main>
+		<section class="dashboard-intro">
+		<h1>Manage Your Offers</h1>
+		<p>Here you can view, organize, and manage all your current offers. 
+		Add new discounts for your experiences, hotels, or restaurants to attract more customers.
+		</p>
+		</section>
+		
+		<hr>
+
+		<section class="offer-section">
+		<h2 class="section-title">Experiences Offers</h2>
+		
+			<div class="offer-list">
+			<article class="offer-card">
+				<div class="offer-check">
+				<label class="check-label">
+				<input type="checkbox" class="offer-checkbox" name="delete[]" value="taif-rose">
+				<span class="visually-hidden">Select offer</span>
+				</label>
+				</div>
+				<img src="images/act4.jpg" alt="Activity" class="offer-img">
+				<div class="offer-body">
+				<h3>Taif Rose Fields Tour</h3>
+				<p class="desc">Breathe in the fragrance of roses, explore Taif’s heritage souks, and capture sweeping views from the Sarawat Mountains.</p>
+				<div class="price-row">
+				<span class="old-price">187 SAR</span>
+				<span class="new-price">150 SAR</span>
+				</div>
+				</div>
+			</article>
+			
+			<article class="offer-card">
+				<div class="offer-check">
+				<label class="check-label">
+				<input type="checkbox" class="offer-checkbox" name="delete[]" value="red-sea">
+				<span class="visually-hidden">Select offer</span>
+				</label>
+				</div>
+				<img src="images/act7.jpg" alt="Activity" class="offer-img">
+				<div class="offer-body">
+				<h3>red sea Snorkeling</h3>
+				<p class="desc">Embark on a vibrant marine journey where coral gardens and clear waters reveal the hidden treasures of the Red Sea.</p>
+				<div class="price-row">
+				<span class="old-price">611 SAR</span>
+				<span class="new-price">550 SAR</span>
+				</div>
+				</div>
+			</article>
+			</div>
+		</section>
+
+		<section class="offer-section">
+		<h2 class="section-title">Hotel Offers</h2>
+		
+		<div class="offer-list">
+			<article class="offer-card">
+			<div class="offer-check">
+			<label class="check-label">
+			<input type="checkbox" class="offer-checkbox" name="delete[]" value="mercure-hotel">
+			<span class="visually-hidden">Select offer</span>
+			</label>
+			</div>
+			<img src="images/hotel1.jpg" alt="Hotel Offer" class="offer-img">
+			<div class="offer-body">
+			<h3>Mercure Hotel</h3>
+			<p>Stay near Abha’s top sights, savor local cuisine, and unwind on scenic balconies overlooking misty mountain valleys.</p>
+			<div class="price-row">
+			<span class="old-price">1500 SAR</span>
+			<span class="new-price">1,050 SAR</span>
+			</div>
+			</div>
+			</article>
+		</div>
+		</section>
+
+		<section class="offer-section">
+		<h2 class="section-title">Restaurant Offers</h2>
+		
+		<div class="offer-list">
+			<article class="offer-card">
+			<div class="offer-check">
+			<label class="check-label">
+			<input type="checkbox" class="offer-checkbox" name="delete[]" value="mercure-hotel">
+			<span class="visually-hidden">Select offer</span>
+			</label>
+			</div>
+			<img src="images/rest1.jpg" alt="restaurant Offer" class="offer-img">
+			<div class="offer-body">
+			<h3>Harrat Restaurant</h3>
+			<p>Enjoy local recipes crafted by expert chefs, from casual lunches to lively evenings celebrating Saudi culinary heritage.</p>
+			<div class="price-row">
+			<span class="old-price">300 SAR</span>
+			<span class="new-price">255 SAR</span>
+			</div>
+			</div>
+			</article>
+		</div>
+		</section>
+
+		<div class="form-actions">
+		<button type="button" id="delete-offers-btn" class="btn submit-btn">Delete Selected</button>
+		</div> 
+		
+		<hr>
+
+		<section  class="form-page-main">
+			<div class="form-container">
+			<h2>Add New Offer</h2>
+			<form action="#" method="post" enctype="multipart/form-data" class="form-body">
+				<div class="form-group">
+				<label for="offer-title">Service Name*</label>
+				<input id="offer-title" name="offer-title" type="text" placeholder="Enter offer name" >
+				</div>
+				
+			<div class="form-group">
+				<label for="service-category">Select a service*</label>
+			<select id="service-category" name="service-category">
+					<option value="" disabled selected>Choose a Service</option>
+					<option value="experience">Experiences</option>
+					<option value="hotel">Hotels</option>
+					<option value="restaurant">Restaurants</option>
+			</select>
+			</div>
+
+				<div class="form-group">
+				<label for="offer-discount">Discount Percentage*</label>
+				<input id="offer-discount" name="offer-discount" type="number" placeholder="e.g. 20%" min="0" max="100" >
+				</div>
+
+				
+
+				<div class="form-actions center">
+				<button type="submit" class="btn submit-btn">Submit</button>
+				</div>
+			</form>
+			</div>
+		</section>
+	</main>
+
+	<footer>
+	<div class="footer-container">
+			<div class="footer-logo"><a href="index.html"><img src="images/LogoB.png" alt="Hayyhum Logo" class="logo-image"></a></div>
+			
+			<div class="footer-links">
+				<h3 class="contact-title">Contact Us</h3>
+				<ul class="contact-list">
+					<li id="contact-email">Hayyhum@gmail.com</li>
+					<li id="contact-phone">+966 55 821 2025</li>
+				</ul>
+			</div>
+
+			<div class="social-media">
+				<p>Social Media</p>
+				<img src="images/SocialIcons1.png" alt="Social Media Icons" class="social-icons-img">
+			</div>
+			
+			<div class="sitemap-link">
+				<p><a href="images/sitemap.jpg">Site Map</a></p>
+			</div>
+			
+		</div>
+		<div class="copyright">
+			<p>Copyrights ©2025 All rights reserved. Hayyhum</p>
+	</div>
+	</footer>
+	
+</body>
+</html>
+ 
